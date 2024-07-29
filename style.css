@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: steelblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.empty {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: solid 3px black;
+    background-color: wheat;
+}
+
+.fill {
+   background-image: url('https://wallpaper.forfun.com/fetch/16/1649074ecd03634e05639d767e131258.jpeg');
+   height: 150px;
+   width: 145px;
+   cursor: pointer;
+   background-size: cover;
+}
+
+.hold {
+    border: solid 5px white;
+}
+
+.hovered {
+    background-color: rgb(46, 45, 45);
+    border-color: white;
+    border-style: dashed;
+}
+
+@media (max-width: 800px) {
+body {
+    flex-direction: column;
+}
+}
